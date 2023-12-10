@@ -1,0 +1,130 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppings', sans-serif;
+}
+
+body {
+    background: #00b6c4;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: rgb(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#6ac8e2, #9276ef);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+     color: white;
+}
+
+.container {
+    background: #f5f5f5;
+    background: radial-gradient(#a9a8a89d, #e0dbdbfe);
+    max-width: 620px;
+    margin: 60px auto;
+    height: 809px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0, .5);
+}
+
+.container h1 {
+    margin-top: 20px;
+    color: #0a0a0a;
+    background: radial-gradient(#cf60d19d, #e0dbdbfe);
+    justify-content: center;
+    font-size: 200%;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+.section {
+    min-height: 100vh;
+    background-color: #090909;
+    background: radial-gradient(#e8e2e2, #0a0a0a);
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px groove deepskyblue;
+}
+
+.container img {
+    margin-top: 10%;
+    margin-left: 33%;
+}
+
+article {
+    justify-content: center;
+    font-size: 200%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+article h::after {
+    content: "";
+    height: 3px;
+    width: 225px;
+    background-color: #ffffff;
+    display: block;
+    margin: auto;
+
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+/*@media only screen and (main-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 95%;
+        height: auto;
+    }
+}*/
